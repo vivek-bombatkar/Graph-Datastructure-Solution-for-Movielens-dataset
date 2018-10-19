@@ -21,3 +21,4 @@
 - git repo structure and readme documentation  
     
 - ingestion pipeline
+- docker contenarize solution
