@@ -4,6 +4,7 @@
 
 - Graph database 
 - graph structure for recomendation dataset  
+    - https://www.objectivity.com/building-a-recommendation-engine-using-a-graph-database/
 - spark graphX  
 - unit test  
 - API  
