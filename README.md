@@ -3,6 +3,7 @@
 ## tasks
 
 - Graph database 
+    - *DBS https://www.predictiveanalyticstoday.com/top-free-graph-databases/  
     - https://www.objectivity.com/building-a-recommendation-engine-using-a-graph-database/  
     - https://towardsdatascience.com/graph-based-recommendation-engine-for-amazon-products-1a373e639263   
 - graph structure for recomendation dataset  
@@ -22,3 +23,13 @@
     
 - ingestion pipeline
 - docker contenarize solution
+
+## paln
+1. fisrt implementation with notebook
+    - ingestion  
+    - API retrival  
+    - unit test    
+2. Tech stack : pyspark + *graphDB + sparkml(later)
+3. visualization , story telling
+4. recomendation api
+5. xxx
