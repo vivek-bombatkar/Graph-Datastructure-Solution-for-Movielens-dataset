@@ -17,7 +17,7 @@
 - unit test  
 - API  
 - data model GIFI diagram  
-    - 
+    
 - git repo structure and readme documentation  
-    - 
+    
 - ingestion pipeline
