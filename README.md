@@ -4,7 +4,6 @@
 
 - Graph database 
     - *DBS https://www.predictiveanalyticstoday.com/top-free-graph-databases/  
-    - https://www.objectivity.com/building-a-recommendation-engine-using-a-graph-database/  
     - https://towardsdatascience.com/graph-based-recommendation-engine-for-amazon-products-1a373e639263   
 - graph structure for recomendation dataset  
     - python https://www.kaggle.com/rounakbanik/movie-recommender-systems  
