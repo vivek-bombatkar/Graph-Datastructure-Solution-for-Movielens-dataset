@@ -31,5 +31,6 @@
     - unit test    
 2. Tech stack : pyspark + *graphDB + sparkml(later)
 3. visualization , story telling
+    - https://go.gliffy.com/go/html5/12822750  
 4. recomendation api
 5. xxx
