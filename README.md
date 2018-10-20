@@ -26,7 +26,7 @@
 
 ## paln
 0. data model ER
-    [!ML ERD](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_ERD.JPG)
+    ![ML ERD](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_ERD.JPG)
     
 1. fisrt implementation with notebook
     - ingestion  
