@@ -42,7 +42,8 @@
     ![ML_INGESTION](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_INGESTION.JPG)  
         
 2. fisrt implementation with 'notebook'
-    - ingestion to HBASE  
+    - pyspark DF store to HIVE
+    - lookup and agg the ratings + tags + genome_tags + genome_score tables to HBASE  
     - Airflow to build pipeline - Docker locally 
     - API for data retrival  
     - unit test    
