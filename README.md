@@ -26,7 +26,7 @@
 1. Understanding the dataset  
     - The ER Diagram 
         - Snowflake data model 
-        - rating : fact less fact table  
+        - rating and tags : are fact table  
     ![ML ERD](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_ERD.JPG)  
     
     - Graph representation
