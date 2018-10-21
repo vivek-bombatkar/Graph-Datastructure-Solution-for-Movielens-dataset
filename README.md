@@ -23,14 +23,25 @@
 - docker contenarize solution
 
 ## paln
-0. Understanding the dataset  
+1. Understanding the dataset  
     - The ER Diagram 
+        - rating table: fact less fact table  
+        - 
     ![ML ERD](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_ERD.JPG)  
     
-    - Graph representation  
+    - Graph representation
+        - Nodes: represent movies  
+        - Edges: combinations of Tags and relavence. More the relaves more the waight to the Edge  
     ![ML_GRAPH](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_GRAPH.JPG)  
-    
-1. fisrt implementation with 'notebook'
+ 
+2. Ingestion pipeline
+    - Overall architecture
+        - Primary data source coule be SFTP location, WEB API etc. 
+        - HIVE as a RAW data store  
+        - HBASE to store final graph data structure   
+    ![ML_INGESTION](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_INGESTION.JPG)  
+        
+2. fisrt implementation with 'notebook'
     - ingestion to HBASE  
     - Airflow to build pipeline - Docker locally 
     - API for data retrival  
