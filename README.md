@@ -32,7 +32,7 @@
     - Graph representation
         - Nodes: represent movies  
         - Edges: combinations of Tags and relavence. More the relaves more the waight to the Edge  
-    ![ML_GRAPH](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_GRAPH.JPG)  
+    ![ML_GRAPH](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_GRAPH_1.JPG)  
  
 2. Ingestion pipeline
     - Overall architecture
