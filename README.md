@@ -3,8 +3,7 @@
 ## tasks
 
 - Graph database 
-    - *DBS https://www.predictiveanalyticstoday.com/top-free-graph-databases/  
-    - https://towardsdatascience.com/graph-based-recommendation-engine-for-amazon-products-1a373e639263   
+    - https://lbartkowski.wordpress.com/2015/04/21/why-i-left-apache-spark-graphx-and-returned-to-hbase-for-my-graph-database/  
 - graph structure for recomendation dataset  
     - python https://www.kaggle.com/rounakbanik/movie-recommender-systems  
     - *python graphlab movielense https://www.analyticsvidhya.com/blog/2016/06/quick-guide-build-recommendation-engine-python/  
@@ -24,15 +23,19 @@
 - docker contenarize solution
 
 ## paln
-0. data model ER
+0. Understanding the dataset  
+    - The ER Diagram 
     ![ML ERD](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_ERD.JPG)  
+    
+    - Graph representation  
     ![ML_GRAPH](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_GRAPH.JPG)  
     
-1. fisrt implementation with notebook
-    - ingestion  
-    - API retrival  
+1. fisrt implementation with 'notebook'
+    - ingestion to HBASE  
+    - Airflow to build pipeline - Docker locally 
+    - API for data retrival  
     - unit test    
-2. Tech stack : pyspark + *graphDB + sparkml(later)
+2. Tech stack : pyspark + HBASE + Dockerfile + sparkml(later) 
 3. visualization , story telling
     - https://go.gliffy.com/go/html5/12822750  
 4. recomendation api
