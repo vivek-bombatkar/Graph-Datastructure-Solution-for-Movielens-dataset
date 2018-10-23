@@ -48,9 +48,13 @@
         
     ![ML_INGESTION](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_INGESTION.JPG)  
         
+    - Technical implementation with Airflow
+        - [dag_ml_graph_ingestion_pipeline.py](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/dag_ml_graph_ingestion_pipeline_.py)
+    
+        ![ML_AIRFLOW_PIPELINE](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_AIRFLOW_PIPELINE.JPG)
+        
+        
 2. fisrt implementation with 'notebook'
-
-    ![ML_AIRFLOW_PIPELINE](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_AIRFLOW_PIPELINE.JPG)
 
     - pyspark DF store to HIVE
     - lookup and agg the ratings + tags + genome_tags + genome_score tables to HBASE  
