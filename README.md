@@ -28,34 +28,46 @@
 
 ## paln
 1. Understanding the dataset  
-    - The ER Diagram 
+    - 1.1 The ER Diagram 
         - Snowflake data model 
         - rating and tags : are fact table  
         
     ![ML ERD](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_ERD.JPG)  
     
-    - Graph representation
+    - 1.2 Graph representation
         - Nodes: represent movies  
         - Edges: combinations of Tags and relavence. More the relaves more the waight to the Edge  
         
     ![ML_GRAPH](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_GRAPH_1.JPG)  
  
 2. Ingestion pipeline
-    - Overall architecture
+    - 2.1 Overall architecture
         - Primary data source could be SFTP location, WEB API etc. 
         - HIVE as a RAW data store to store all the data in partitioned way.    
         - HBASE to store final graph data structure   
         
     ![ML_INGESTION](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_INGESTION.JPG)  
         
-    - Technical implementation with Airflow
+    - 2.2 Technical implementation with Airflow
         - [dag_ml_graph_ingestion_pipeline.py](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/dag_ml_graph_ingestion_pipeline_.py)
     
         ![ML_AIRFLOW_PIPELINE](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_AIRFLOW_PIPELINE.JPG)
         
         
-2. fisrt implementation with 'notebook'
-
+3. The code base 
+    - 3.1 Repository structure
+    ```
+    
+    ├── Dockerfile
+    ├── pics/
+    ├── README.md
+    ├── requirements.txt
+    ├── src/
+    │    └── main/
+    ├── testdata/
+    └── tests/
+    ```
+    - fisrt implementation with 'notebook'  
     - pyspark DF store to HIVE
     - lookup and agg the ratings + tags + genome_tags + genome_score tables to HBASE  
     - Airflow to build pipeline - Docker locally 
