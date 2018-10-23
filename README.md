@@ -135,10 +135,7 @@ And 'the story' goes like this...
         - Adjacency List  
     - unit test    
 2. Tech stack : pyspark + HBASE + Dockerfile + sparkml(later) 
-3. visualization , story telling
-    - https://go.gliffy.com/go/html5/12822750  
 4. recomendation api
-5. xxx
 
 
 ## Resources used 
@@ -158,3 +155,5 @@ And 'the story' goes like this...
 - spark graphX  
     - https://spark.apache.org/docs/latest/graphx-programming-guide.html  
 - unit test  
+- visualization 
+    - https://go.gliffy.com/go/html5/12822750  
