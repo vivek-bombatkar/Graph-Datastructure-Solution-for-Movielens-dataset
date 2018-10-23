@@ -11,10 +11,11 @@ And 'the story' goes like this...
 ![ML ERD](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_ERD.JPG)  
 
 - 1.2 Graph representation
+    - Undirected graph  
     - Nodes: represent movies  
     - Edges: combinations of Tags and relavence. More the relaves more the waight to the Edge  
 
-![ML_GRAPH](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_GRAPH_1.JPG)  
+![ML_GRAPH](https://github.com/vivek-bombatkar/Graph-Datastructure-Solution-for-Movielens-dataset/blob/master/ML_GRAPH_2.JPG)  
  
 ### 2. Ingestion pipeline
 
