@@ -27,6 +27,10 @@ And 'the story' goes like this...
 ![ML_INGESTION](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_INGESTION.JPG)  
 
 - 2.2 Technical implementation with Airflow
+    -  Adjacency List
+        T5 : [M2, M3, M1, M4]  
+        Tx : [M10, M15, M7, .... Mn]
+        
     - [dag_ml_graph_ingestion_pipeline.py](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/dag_ml_graph_ingestion_pipeline_.py)
 
     ![ML_AIRFLOW_PIPELINE](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_AIRFLOW_PIPELINE.JPG)
@@ -133,7 +137,9 @@ And 'the story' goes like this...
 
     - lookup and agg the ratings + tags + genome_tags + genome_score tables to HBASE  
     - API for grapg traverse & data retrival 
-        - Adjacency List  
+        - Get the most relavent Tag for movie  
+        - Find column family for that TagId (Key)  
+        - Suggest Movies from given column list   
     - unit test    
 2. Tech stack : pyspark + HBASE + Dockerfile + sparkml(later) 
 4. recomendation api
