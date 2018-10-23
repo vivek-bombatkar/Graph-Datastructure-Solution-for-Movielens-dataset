@@ -1,7 +1,9 @@
 # Graph Datastructure Solution for Movielens dataset
 
-And 'the story' goes like this...  
+And 'the story' goes like this...
+
 ### 1. Understanding the dataset  
+
     - 1.1 The ER Diagram 
         - Snowflake data model 
         - rating and tags : are fact table  
