@@ -57,16 +57,22 @@
 3. The code base 
     - 3.1 Repository structure
     ```
-    
-    ├── Dockerfile
+ 
     ├── pics/
+    ├── Dockerfile  
     ├── README.md
-    ├── requirements.txt
+    ├── requirements.txt    # list all dependencies for package.
+    ├── setup.py            # build script for setuptools. 
+    ├── Makefile            # organize code compilation.
     ├── src/
-    │    └── main/
-    ├── testdata/
+    |       __init__.py
+    |       main.py
     └── tests/
-    ```
+    |    └── testdata/
+    |       test_main.py
+    
+    
+    ```  
     - fisrt implementation with 'notebook'  
     - pyspark DF store to HIVE
     - lookup and agg the ratings + tags + genome_tags + genome_score tables to HBASE  
