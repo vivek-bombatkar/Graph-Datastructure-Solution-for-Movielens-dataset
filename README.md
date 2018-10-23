@@ -4,17 +4,17 @@ And 'the story' goes like this...
 
 ### 1. Understanding the dataset  
 
-    - 1.1 The ER Diagram 
-        - Snowflake data model 
-        - rating and tags : are fact table  
-        
-    ![ML ERD](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_ERD.JPG)  
-    
-    - 1.2 Graph representation
-        - Nodes: represent movies  
-        - Edges: combinations of Tags and relavence. More the relaves more the waight to the Edge  
-        
-    ![ML_GRAPH](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_GRAPH_1.JPG)  
+- 1.1 The ER Diagram 
+    - Snowflake data model 
+    - rating and tags : are fact table  
+
+![ML ERD](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_ERD.JPG)  
+
+- 1.2 Graph representation
+    - Nodes: represent movies  
+    - Edges: combinations of Tags and relavence. More the relaves more the waight to the Edge  
+
+![ML_GRAPH](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_GRAPH_1.JPG)  
  
 ### 2. Ingestion pipeline
     - 2.1 Overall architecture
