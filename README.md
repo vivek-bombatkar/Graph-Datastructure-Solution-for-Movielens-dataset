@@ -45,7 +45,7 @@
     - pyspark DF store to HIVE
     - lookup and agg the ratings + tags + genome_tags + genome_score tables to HBASE  
     - Airflow to build pipeline - Docker locally 
-    - API for data retrival  
+    - API for grapg traverse & data retrival 
     - unit test    
 2. Tech stack : pyspark + HBASE + Dockerfile + sparkml(later) 
 3. visualization , story telling
