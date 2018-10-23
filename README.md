@@ -21,7 +21,7 @@ And 'the story' goes like this...
 
 - 2.1 Overall architecture
     - Primary data source could be SFTP location, WEB API etc. 
-    - HIVE as a RAW data store to store all the data in partitioned way.    
+    - HIVE as a RAW data storage, to store data in partitioned by ingestion timestamp .    
     - HBASE to store final graph data structure   
 
 ![ML_INGESTION](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_INGESTION.JPG)  
