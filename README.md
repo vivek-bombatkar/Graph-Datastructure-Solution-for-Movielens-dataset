@@ -31,11 +31,13 @@
     - The ER Diagram 
         - Snowflake data model 
         - rating and tags : are fact table  
+        
     ![ML ERD](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_ERD.JPG)  
     
     - Graph representation
         - Nodes: represent movies  
         - Edges: combinations of Tags and relavence. More the relaves more the waight to the Edge  
+        
     ![ML_GRAPH](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_GRAPH_1.JPG)  
  
 2. Ingestion pipeline
@@ -43,9 +45,13 @@
         - Primary data source could be SFTP location, WEB API etc. 
         - HIVE as a RAW data store to store all the data in partitioned way.    
         - HBASE to store final graph data structure   
+        
     ![ML_INGESTION](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_INGESTION.JPG)  
         
 2. fisrt implementation with 'notebook'
+
+    ![ML_AIRFLOW_PIPELINE](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_AIRFLOW_PIPELINE.JPG)
+
     - pyspark DF store to HIVE
     - lookup and agg the ratings + tags + genome_tags + genome_score tables to HBASE  
     - Airflow to build pipeline - Docker locally 
