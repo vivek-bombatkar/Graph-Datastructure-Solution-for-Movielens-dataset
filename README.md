@@ -4,6 +4,9 @@
 
 - Graph database 
     - https://lbartkowski.wordpress.com/2015/04/21/why-i-left-apache-spark-graphx-and-returned-to-hbase-for-my-graph-database/  
+    - HBASE https://mapr.com/blog/guidelines-hbase-schema-design/  
+    - HBASE https://de.slideshare.net/DanLynn1/storing-and-manipulating-graphs-in-hbase  
+    - https://medium.com/basecs/from-theory-to-practice-representing-graphs-cfd782c5be38  
 - graph structure for recomendation dataset  
     - python https://www.kaggle.com/rounakbanik/movie-recommender-systems  
     - *python graphlab movielense https://www.analyticsvidhya.com/blog/2016/06/quick-guide-build-recommendation-engine-python/  
@@ -11,6 +14,7 @@
     - *code notebook https://github.com/jadianes/spark-movie-lens  
     - graphx scala https://github.com/sundeepblue/yelper_recommendation_system  
     - *pyspark http://www.3leafnodes.com/apache-spark-introduction-recommender-system   
+    = python https://www.geeksforgeeks.org/graph-and-its-representations/  
 - spark graphX  
     - https://spark.apache.org/docs/latest/graphx-programming-guide.html  
 - unit test  
