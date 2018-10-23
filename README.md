@@ -1,6 +1,6 @@
 # Graph Datastructure Solution for Movielens dataset
 
-## The story goes like this...  
+And 'the story' goes like this...  
 ### 1. Understanding the dataset  
     - 1.1 The ER Diagram 
         - Snowflake data model 
@@ -14,7 +14,7 @@
         
     ![ML_GRAPH](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_GRAPH_1.JPG)  
  
-2. Ingestion pipeline
+### 2. Ingestion pipeline
     - 2.1 Overall architecture
         - Primary data source could be SFTP location, WEB API etc. 
         - HIVE as a RAW data store to store all the data in partitioned way.    
@@ -28,7 +28,7 @@
         ![ML_AIRFLOW_PIPELINE](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_AIRFLOW_PIPELINE.JPG)
         
         
-3. The code base 
+### 3. The code base 
     - 3.1 Repository structure
     ```
  
