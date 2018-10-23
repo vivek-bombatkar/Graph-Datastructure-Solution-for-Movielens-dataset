@@ -46,6 +46,7 @@
     - lookup and agg the ratings + tags + genome_tags + genome_score tables to HBASE  
     - Airflow to build pipeline - Docker locally 
     - API for grapg traverse & data retrival 
+        - Adjacency List  
     - unit test    
 2. Tech stack : pyspark + HBASE + Dockerfile + sparkml(later) 
 3. visualization , story telling
