@@ -26,14 +26,12 @@ And 'the story' goes like this...
 
 ![ML_INGESTION](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_INGESTION_2.JPG)  
 
-    -  Adjacency List: to store data to graph structure 
+- 2.2 Adjacency List: to store data to graph structure 
 
 ![ML_HBASE_STRUCTUR](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_HBASE_STRUCTUR_1.JPG)  
 
         
-        
-- 2.2 Technical implementation with Airflow
-
+- 2.3 Technical implementation with Airflow
         
     - [dag_ml_graph_ingestion_pipeline.py](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/dag_ml_graph_ingestion_pipeline_.py)
 
