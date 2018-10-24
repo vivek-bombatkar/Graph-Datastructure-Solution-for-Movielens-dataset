@@ -1,0 +1,16 @@
+Base Image
+FROM python:3.6.2
+ 
+LABEL maintainer="vivek"
+ 
+ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
+ 
+RUN mkdir -p /opt/ml
+WORKDIR /opt/ml
+ 
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+ 
+COPY . .
+ 
+CMD [ "python", "./src/main.py" ]
