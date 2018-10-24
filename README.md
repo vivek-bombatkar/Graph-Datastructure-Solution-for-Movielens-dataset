@@ -155,6 +155,7 @@ And 'the story' goes like this...
     - https://lbartkowski.wordpress.com/2015/04/21/why-i-left-apache-spark-graphx-and-returned-to-hbase-for-my-graph-database/  
     - HBASE https://mapr.com/blog/guidelines-hbase-schema-design/  
     - HBASE https://de.slideshare.net/DanLynn1/storing-and-manipulating-graphs-in-hbase  
+    - video https://www.youtube.com/watch?v=KQMCOgVdsiw  
     - https://medium.com/basecs/from-theory-to-practice-representing-graphs-cfd782c5be38  
 - graph structure for recomendation dataset  
     - python https://www.kaggle.com/rounakbanik/movie-recommender-systems  
