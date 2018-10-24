@@ -95,7 +95,7 @@ And 'the story' goes like this...
 
     ```
 
-    - PySpark dataframe from csv data and load data to HDFS / HIVE 
+    - ### 3.2.2 PySpark dataframe from csv data and load data to HDFS / HIVE 
     ```python
 
     In [14]:
@@ -142,15 +142,21 @@ And 'the story' goes like this...
 
     ```
 
-    - lookup and agg the ratings + tags + genome_tags + genome_score tables to HBASE  
-    - API for grapg traverse & data retrival 
-        - Get the most relavent Tag for movie  
-        - Find column family for that TagId (Key)  
-        - Suggest Movies from given column list   
+    - ### 3.2.3 lookup and agg the ratings + tags + genome_tags + genome_score tables to HBASE  
+    
+    ```python
+    
+    ```
+    - ### 3.2.4 API for grapg traverse & data retrival 
+        ```python
+        
+        def getRecomendation(movieId):
+            - Find column family for that movieId (Key)  
+            - Suggest Movies from given column list by Order defined   
+        ```
+        
     - unit test    
-2. Tech stack : pyspark + HBASE + Dockerfile + sparkml(later) 
-4. recomendation api
-
+    
 
 ## Resources used 
 - Graph database 
