@@ -166,7 +166,8 @@ And 'the story' goes like this...
     - *code notebook https://github.com/jadianes/spark-movie-lens  
     - graphx scala https://github.com/sundeepblue/yelper_recommendation_system  
     - *pyspark http://www.3leafnodes.com/apache-spark-introduction-recommender-system   
-    = python https://www.geeksforgeeks.org/graph-and-its-representations/  
+    - python https://www.geeksforgeeks.org/graph-and-its-representations/  
+    - https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-using-spark-query-hbase  
 - spark graphX  
     - https://spark.apache.org/docs/latest/graphx-programming-guide.html  
 - unit test  
