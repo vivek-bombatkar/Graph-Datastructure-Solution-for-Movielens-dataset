@@ -15,21 +15,25 @@ And 'the story' goes like this...
     - Nodes: represent movies  
     - Edges: combinations of Tags and relavence. More the relaves more the waight to the Edge  
 
-![ML_GRAPH](https://github.com/vivek-bombatkar/Graph-Datastructure-Solution-for-Movielens-dataset/blob/master/ML_GRAPH_2.JPG)  
+![ML_GRAPH](https://github.com/vivek-bombatkar/Graph-Datastructure-Solution-for-Movielens-dataset/blob/master/ML_GRAPH_4.JPG)  
  
 ### 2. Ingestion pipeline
 
 - 2.1 Overall architecture
     - Primary data source could be SFTP location, WEB API etc. 
     - HIVE as a RAW data storage, to store data in partitioned by ingestion timestamp .    
-    - HBASE to store final graph data structure   
+    - HBASE to store final graph data structure           
 
-![ML_INGESTION](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_INGESTION.JPG)  
+![ML_INGESTION](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_INGESTION_2.JPG)  
 
+    -  Adjacency List: to store data to graph structure 
+
+![ML_HBASE_STRUCTUR](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_HBASE_STRUCTUR_1.JPG)  
+
+        
+        
 - 2.2 Technical implementation with Airflow
-    -  Adjacency List
-        T5 : [M2, M3, M1, M4]  
-        Tx : [M10, M15, M7, .... Mn]
+
         
     - [dag_ml_graph_ingestion_pipeline.py](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/dag_ml_graph_ingestion_pipeline_.py)
 
