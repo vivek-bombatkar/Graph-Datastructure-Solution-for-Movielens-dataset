@@ -51,12 +51,17 @@ And 'the story' goes like this...
 |       __init__.py
 |       main.py
 |       module_1.py
+|       └──shared/
+|           __init__.py
+|           logging.yaml
+|           common.py
 ├── dag/
-|       dag_ml_graph_ingestion_pipeline_.py
+|       dag_ml_graph_ingestion_pipeline_.py     # Airflow dag file
 └── tests/
 |    └── testdata/
 |       test_main.py
-
+└── notebook/                                   # data exploration, quick prototype, etc.
+|       pyspark_ingestion_pipeline.ipynb
 
 ```  
 
