@@ -24,7 +24,7 @@ And 'the story' goes like this...
     - HIVE as a RAW data storage, to store data in partitioned by ingestion timestamp .    
     - HBASE to store final graph data structure           
 
-![ML_INGESTION](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_INGESTION_2.JPG)  
+![ML_INGESTION](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_INGESTION_3.JPG)  
 
 - 2.2 Adjacency List: to store data to graph structure 
 
