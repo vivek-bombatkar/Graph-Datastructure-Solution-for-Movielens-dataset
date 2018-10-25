@@ -67,7 +67,7 @@ And 'the story' goes like this...
 
 ```  
 
-- 3.2 Code snipt from 'notebook' implementation [pyspark_ingestion_pipeline.ipynb](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/pyspark_ingestion_pipeline.ipynb)  
+- 3.2 Code snipt from 'notebook' implementation [pyspark_ingestion_pipeline.ipynb](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/pyspark_ingestion_pipeline_v2.ipynb)  
 
     - ### 3.2.1 Data Exploration with Pandas
     ```python
