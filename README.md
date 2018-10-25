@@ -169,7 +169,7 @@ And 'the story' goes like this...
                   .orderBy(['tagid','relevance'],ascending=False) \
                   .select('tagId','movieId', 'relevance').distinct()
     sdf_join_gscore.head(20)
-
+    """
     +-----+-------+------------------+
     |tagId|movieId|         relevance|
     +-----+-------+------------------+
@@ -181,6 +181,7 @@ And 'the story' goes like this...
     | 1128|   7387|           0.98675|
     | 1128|   5165|0.9862500000000001|
     | 1128|  53468|0.9850000000000001|
+    """
     ```
         
     ```python
@@ -189,7 +190,7 @@ And 'the story' goes like this...
       .agg(collect_set("movieId").alias("related_movies"), count("movieId").alias("sum"))\
       .orderBy("sum", ascending=False).select('related_movies')
     sdf_final.show()
-
+    """
     [Row(related_movies=[80549, 83976, 356, 1047, 785, 3683, 3429, ....]),
     Row(related_movies=[1199, 6063, 6440, 57502, 44828, 7123, 2515, ...]),
     Row(related_movies=[356, 5351, 27790, 66097, 3429, 98243, 33004, ...]),
@@ -198,16 +199,16 @@ And 'the story' goes like this...
     Row(related_movies=[1780, 6440, 7487, 1701, 43914, 97306, 91622, ...]),
     Row(related_movies=[54997, 3508, 5199, 8618, 2921, 714, 8039, ...]),
     Row(related_movies=[5503, 357, 62344, 128520, 4823, 37729, 46723, ...]),
-    Row(related_movies=[4437, 3472, 2710, 54259, 4896, 7045, 40815, ...]),
-
+    Row(related_movies=[4437, 3472, 2710, 54259, 4896, 7045, 40815, ...])]
+    """
     ```
         
     - ### 3.2.4 API for grapg traverse & data retrival 
     ```python
 
     def getRecomendation(movieId):
-        - Find column family for that movieId (Key)  
-        - Suggest Movies from given column list by Order defined   
+        #- Find column family for that movieId (Key)  
+        #- Suggest Movies from given column list by Order defined   
     ```
         
 
