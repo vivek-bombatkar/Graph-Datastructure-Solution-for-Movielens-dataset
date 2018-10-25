@@ -149,7 +149,7 @@ And 'the story' goes like this...
     from pyspark.sql.functions import count, col, collect_set
     sdf_join_tags = sdf_tags.join(sdf_genome_tags,'tag').select('tagId','movieId')/FileStore/tables/genome_scores-02096.csv
     sdf_join_tags.show()
-
+    """
     +-----+-------+
     |tagId|movieId|
     +-----+-------+
@@ -160,6 +160,7 @@ And 'the story' goes like this...
     |  149|    668|
     |  894|    898|
     |  712|   1248|
+    """
     ```
     
     ```python
