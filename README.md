@@ -142,18 +142,72 @@ And 'the story' goes like this...
 
     ```
 
-    - ### 3.2.3 Adjacency List to HBASE table  
+    - ### 3.2.3 Generate Adjacency List for movies with similler tags
     
     ```python
-    
+    # join tags with genome_tags 
+    from pyspark.sql.functions import count, col, collect_set
+    sdf_join_tags = sdf_tags.join(sdf_genome_tags,'tag').select('tagId','movieId')/FileStore/tables/genome_scores-02096.csv
+    sdf_join_tags.show()
+
+    +-----+-------+
+    |tagId|movieId|
+    +-----+-------+
+    |  288|    208|
+    |  288|    353|
+    |  712|    521|
+    |  288|    592|
+    |  149|    668|
+    |  894|    898|
+    |  712|   1248|
     ```
-    - ### 3.2.4 API for grapg traverse & data retrival 
-        ```python
+    
+    ```python
+    # join result with genome_score
+    sdf_join_gscore = sdf_join_tags.join(sdf_genome_scores,['tagId','movieId'])\
+                  .orderBy(['tagid','relevance'],ascending=False) \
+                  .select('tagId','movieId', 'relevance').distinct()
+    sdf_join_gscore.head(20)
+
+    +-----+-------+------------------+
+    |tagId|movieId|         relevance|
+    +-----+-------+------------------+
+    | 1128|   5210|0.9942500000000001|
+    | 1128|   5413|0.9917499999999999|
+    | 1128|  33834|            0.9915|
+    | 1128|   6731|0.9884999999999999|
+    | 1128|  71535|0.9870000000000001|
+    | 1128|   7387|           0.98675|
+    | 1128|   5165|0.9862500000000001|
+    | 1128|  53468|0.9850000000000001|
+    ```
         
-        def getRecomendation(movieId):
-            - Find column family for that movieId (Key)  
-            - Suggest Movies from given column list by Order defined   
-        ```
+    ```python
+    # Adjacency List 
+    sdf_final = sdf_join_gscore.groupBy("tagId")\
+      .agg(collect_set("movieId").alias("related_movies"), count("movieId").alias("sum"))\
+      .orderBy("sum", ascending=False).select('related_movies')
+    sdf_final.show()
+
+    [Row(related_movies=[80549, 83976, 356, 1047, 785, 3683, 3429, ....]),
+    Row(related_movies=[1199, 6063, 6440, 57502, 44828, 7123, 2515, ...]),
+    Row(related_movies=[356, 5351, 27790, 66097, 3429, 98243, 33004, ...]),
+    Row(related_movies=[74750, 71700, 3652, 113159, 7202, 2513, 75425, ...]),
+    Row(related_movies=[74750, 71700, 3652, 113159, 7202, 2513, 75425, ...]),
+    Row(related_movies=[1780, 6440, 7487, 1701, 43914, 97306, 91622, ...]),
+    Row(related_movies=[54997, 3508, 5199, 8618, 2921, 714, 8039, ...]),
+    Row(related_movies=[5503, 357, 62344, 128520, 4823, 37729, 46723, ...]),
+    Row(related_movies=[4437, 3472, 2710, 54259, 4896, 7045, 40815, ...]),
+
+    ```
+        
+    - ### 3.2.4 API for grapg traverse & data retrival 
+    ```python
+
+    def getRecomendation(movieId):
+        - Find column family for that movieId (Key)  
+        - Suggest Movies from given column list by Order defined   
+    ```
         
 
 ## Resources used 
