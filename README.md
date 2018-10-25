@@ -8,14 +8,14 @@ And 'the story' goes like this...
     - Snowflake data model 
     - rating and tags : are fact table  
 
-![ML ERD](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_ERD.JPG)  
+![ML ERD](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/pics/ML_ERD.JPG)  
 
 - 1.2 Graph representation
     - Undirected graph  
     - Nodes: represent movies  
     - Edges: combinations of Tags and relavence. More the relaves more the waight to the Edge  
 
-![ML_GRAPH](https://github.com/vivek-bombatkar/Graph-Datastructure-Solution-for-Movielens-dataset/blob/master/ML_GRAPH_4.JPG)  
+![ML_GRAPH](https://github.com/vivek-bombatkar/Graph-Datastructure-Solution-for-Movielens-dataset/blob/master/pics/ML_GRAPH_4.JPG)  
  
 ### 2. Ingestion pipeline
 
@@ -24,18 +24,18 @@ And 'the story' goes like this...
     - HIVE as a RAW data storage, to store data in partitioned by ingestion timestamp .    
     - HBASE to store final graph data structure           
 
-![ML_INGESTION](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_INGESTION_3.JPG)  
+![ML_INGESTION](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/pics/ML_INGESTION_3.JPG)  
 
 - 2.2 Adjacency List: to store data to graph structure 
 
-![ML_HBASE_STRUCTUR](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_HBASE_STRUCTUR_1.JPG)  
+![ML_HBASE_STRUCTUR](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/pics/ML_HBASE_STRUCTUR_1.JPG)  
 
         
 - 2.3 Technical implementation with Airflow
         
-    - [dag_ml_graph_ingestion_pipeline.py](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/dag_ml_graph_ingestion_pipeline_.py)
+    - [dag_ml_graph_ingestion_pipeline.py](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/dag/dag_ml_graph_ingestion_pipeline_.py)
 
-    ![ML_AIRFLOW_PIPELINE](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/ML_AIRFLOW_PIPELINE.JPG)
+    ![ML_AIRFLOW_PIPELINE](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/pics/ML_AIRFLOW_PIPELINE.JPG)
 
         
 ### 3. Show me The code  
@@ -67,7 +67,7 @@ And 'the story' goes like this...
 
 ```  
 
-- 3.2 Code snipt from 'notebook' implementation [pyspark_ingestion_pipeline.ipynb](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/pyspark_ingestion_pipeline_v2.ipynb)  
+- 3.2 Code snipt from 'notebook' implementation [pyspark_ingestion_pipeline.ipynb](https://github.com/vivek-bombatkar/graph-data-structure-for-recommendation-dataset/blob/master/notebook/pyspark_ingestion_pipeline_v2.ipynb)  
 
     - ### 3.2.1 Data Exploration with Pandas
     ```python
