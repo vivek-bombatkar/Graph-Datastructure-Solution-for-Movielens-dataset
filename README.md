@@ -142,7 +142,7 @@ And 'the story' goes like this...
 
     ```
 
-    - ### 3.2.3 lookup and agg the ratings + tags + genome_tags + genome_score tables to HBASE  
+    - ### 3.2.3 Adjacency List to HBASE table  
     
     ```python
     
@@ -155,8 +155,6 @@ And 'the story' goes like this...
             - Suggest Movies from given column list by Order defined   
         ```
         
-    - unit test    
-    
 
 ## Resources used 
 - Graph database 
